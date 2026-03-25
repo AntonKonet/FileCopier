@@ -1,0 +1,8 @@
+{
+  "SourceFolder": "source_folder",
+  "TargetFolder": "target_folder",
+  "SourceFileName": "source_file",
+  "Template": "%prefix%_%id%_%timestamp%",
+  "Prefix": "prefix",
+  "Id": "0001"
+}
