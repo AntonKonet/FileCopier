@@ -31,7 +31,7 @@ namespace FileCopier
             int idLength = id.Length;
             int freeId = int.Parse(id);
 
-            string[] filesNames = Directory.GetFiles(targetFolder);
+            string[] filesNames = Directory.GetFiles(targetFolder, $"{prefix}_*");
             int[] takenIds = filesNames.Select(
                 s => int.Parse(Path.GetFileName(s).Substring(prefix.Length + 1, idLength))
             ).ToArray();
